@@ -1,0 +1,22 @@
+[features]
+seeds = true
+skip-lint = false
+
+[toolchain]
+anchor_version = "0.30.1"
+
+[programs.localnet]
+incognito_program = "APQauWUWYf1pd7BwG8xWe2eQT7uhXX4NRnRYQJfnAiYW"
+
+[programs.devnet]
+incognito_program = "APQauWUWYf1pd7BwG8xWe2eQT7uhXX4NRnRYQJfnAiYW"
+
+[programs.mainnet]
+incognito_program = "APQauWUWYf1pd7BwG8xWe2eQT7uhXX4NRnRYQJfnAiYW"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
