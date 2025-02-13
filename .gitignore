@@ -1,0 +1,21 @@
+# Rust / Anchor build artifacts
+target/
+.anchor/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local secrets / keypairs
+**/*-keypair.json
+**/keypair.json
+**/id.json
+.env*
+
